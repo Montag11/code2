@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <TextView
+        android:id="@+id/searchCardInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchFieldBtnFrame"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:lineSpacingExtra="2dp"
+        android:textSize="15.4dp"
+        android:text=""
+        android:textColor="#303030" />
+
+    <TextView
+        android:id="@+id/mainTittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/mainTittle"
+        android:textAlignment="center"
+        android:textColor="#AD3ED5"
+        android:textSize="33dp" />
+
+    <TextView
+        android:id="@+id/firstStartWelcomeHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/mainTittle"
+        android:textColor="#FF626262"
+        android:layout_marginTop="30dp"
+        android:textSize="15.4dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Добро пожаловать!"/>
+
+    <TextView
+        android:id="@+id/firstStartHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/mainTittle"
+        android:textAlignment="center"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/montserrat"
+        android:textColor="#303030"
+        android:textSize="14.3dp"
+        android:text="@string/first_start_hint_msg"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/searchField"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/mainTittle"
+        android:layout_marginHorizontal="70dp"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="#AD3ED5"
+        android:cursorVisible="true"
+        android:gravity="center"
+        android:hint="@string/searchFieldHint"
+        android:textColor="#515151"
+        android:imeOptions="actionSearch"
+        android:background="@android:color/transparent"
+        android:textColorHint="#9C9B9B"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="16.5dp"
+        android:inputType="number"
+        android:digits="0123456789"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/searchFieldBtnFrame"
+        android:layout_width="150dp"
+        app:cardCornerRadius="20dp"
+        android:layout_centerHorizontal="true"
+        app:cardElevation="5dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchField"
+        android:layout_marginTop="7dp">
+    <Button
+        android:id="@+id/searchFieldBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16.4dp"
+        android:background="#FAFAFA"
+        android:textColor="#AD3ED5"
+        android:text="@string/searchFieldBtn" />
+</androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_above="@id/menuBar"
+        android:background="@drawable/background_with_shadow" />
+
+    <LinearLayout
+        android:id="@+id/menuBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/bottomMenuSearchBtn"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_marginHorizontal="15dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/search_icon"
+            android:contentDescription="@string/app_name"/>
+
+        <ImageButton
+            android:id="@+id/bottomMenuCardsListBtn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="1dp"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_marginHorizontal="15dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/cards_list_icon_unselected"
+            android:contentDescription="@string/app_name"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/searchHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchCardInfo"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:textColor="#919191"
+        android:textSize="15.4dp" />
+</RelativeLayout>

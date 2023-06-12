@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/monitoringLayout"
+    android:background="#FBFBFB"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".MonitoringActivity">
+
+    <LinearLayout
+        android:id="@+id/monTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/monTopBarSortBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:stateListAnimator="@null"
+            android:textSize="12.65dp"
+            android:textAllCaps="false"
+            android:text="Сначала новые  ⇅"
+            tools:ignore="SmallSp" />
+
+        <Button
+            android:id="@+id/monTopBarDelBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:stateListAnimator="@null"
+            android:textSize="12.65dp"
+            android:textAllCaps="false"
+            android:text="Удалить все"
+            android:textColor="#919191"
+            tools:ignore="SmallSp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/topShadowEl"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/monTopBar"
+        android:elevation="20dp"
+        android:background="@drawable/background_with_shadow_below"
+        android:orientation="horizontal" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topShadowEl"
+        android:layout_above="@id/menuBar"
+        tools:listitem="@layout/card_item" />
+
+    <TextView
+        android:id="@+id/cardsListEmptyMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/emptyListMsg"
+        android:textColor="#B3B3B3"
+        android:textSize="15.4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_above="@id/menuBar"
+        android:background="@drawable/background_with_shadow" />
+
+    <LinearLayout
+        android:id="@+id/menuBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/bottomMenuSearchBtn"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_marginHorizontal="15dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/search_icon_unselected"
+            android:contentDescription="@string/app_name"/>
+
+        <ImageButton
+            android:id="@+id/bottomMenuCardsListBtn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="1dp"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_marginHorizontal="15dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/cards_list_icon"
+            android:contentDescription="@string/app_name"/>
+    </LinearLayout>
+</RelativeLayout>

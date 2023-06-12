@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="25dp">
+
+    <EditText
+        android:id="@+id/input_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:gravity="center_horizontal"
+        android:textSize="15.5sp"
+        android:backgroundTint="@android:color/transparent"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:maxLength="2"
+        android:digits="0123456789"
+        android:hint="Введите значение" />
+</LinearLayout>

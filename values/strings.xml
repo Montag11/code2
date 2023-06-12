@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">WB Монитор Kotlin</string>
+    <string name="searchMenuBtn">Поиск</string>
+    <string name="onMonMenuBtn">Активные</string>
+    <string name="historyMenuBtn">История</string>
+    <string name="mainTittle">WB\nМонитор цен</string>
+    <string name="searchFieldHint">Введите артикул товара...</string>
+    <string name="searchFieldBtn">Поиск</string>
+    <string name="no_user_input">Заполните поле</string>
+    <string name="cardBrand">Бренд</string>
+    <string name="cardName">Название</string>
+    <string name="card_pricedrop">Снижение цены</string>
+    <string name="cardStatus">Статус</string>
+    <string name="cardMethod">Метод</string>
+    <string name="cardStatusValue">Неактивен</string>
+    <string name="switchDescription">Включить</string>
+    <string name="deleteDescription">Удалить</string>
+    <string name="searchHelp">Нажмите на название для добавления</string>
+    <string name="maxSppValueMsg">Значение скидки не может превышать 30%</string>
+    <string name="sppHintBtnText">Значение этой скидки указано в приложении Wildberries на странице профиля пользователя (последняя кнопка в нижнем ряду кнопок).</string>
+    <string name="no_internet_msg_1">Нет доступа к сети.\nПроверьте интернет-соединение.</string>
+    <string name="noInternetMsg2">Не удается установить подключение к сети.\nПроверьте интернет-соединение.</string>
+    <string name="productNotFoundMsg">Товара с таким артикулем не найдено.\nПроверьте корректность введенных данных.</string>
+    <string name="productOutOfStockMsg">Товар с этим артикулем отсутствует в продаже.\nПроверьте корректность введенных данных.</string>
+    <string name="productAlreadyExistMsg">Карточка c этим товаром уже существует</string>
+    <string name="productAddedMsg">Карточка товара добавлена</string>
+    <string name="emptyListMsg">Список пуст</string>
+    <string name="enter_value_msg">Введите значение</string>
+    <string name="zero_enter_msg">Введите значение больше нуля</string>
+    <string name="spinner_change_method_msg">Для изменения метода отключите отслеживание, затем включите снова</string>
+    <string name="spinner_set_method_msg">Необходимо выбрать метод отслеживания цены</string>
+    <string name="cards_limit_msg">Достигнут лимит максимального количества отслеживаемых цен. Для продолжения необходимо отключить отслеживание у других товаров</string>
+    <string name="first_start_hint_msg">Чтобы добавить товар в список отслеживания, введите его артикул в поле ввода ниже и выполните поиск.</string>
+    <string name="out_of_stock_msg">Нет в наличии</string>
+</resources>

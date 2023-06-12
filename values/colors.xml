@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dialog_btn_color">#FFA226CF</color>
+    <color name="notification_color">#B56CEF</color>
+    <color name="search_field_info_msg_color">#FF626262</color>
+    <color name="sdg">#ABABAB</color>
+    <color name="active_status_color">#FF52B41D</color>
+    <color name="Inactive_status_color">#C25555</color>
+    <color name="wbС_color">#75651414</color>
+    <color name="wbapp_color">#6A1B9A</color>
+    <color name="wbapp_statusbar_color">#4D1472</color>
+    <color name="wbapp_icon_color">#AF52DE</color>
+</resources>
